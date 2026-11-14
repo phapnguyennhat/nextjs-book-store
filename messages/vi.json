@@ -1,0 +1,150 @@
+{
+  "Metadata": {
+    "title": "Thoth — Nhiều hiệu sách, một giỏ hàng",
+    "description": "Thoth là sàn sách tập hợp nhiều hiệu sách đã được xác minh. Đặt sách từ nhiều nơi trong một giỏ hàng."
+  },
+  "Header": {
+    "searchLabel": "Tìm kiếm",
+    "searchPlaceholder": "Tìm sách, tác giả, hiệu sách…",
+    "mainNav": "Chính",
+    "sell": "Bán trên Thoth",
+    "cart": "Giỏ hàng ({count})",
+    "signIn": "Đăng nhập",
+    "account": "Tài khoản",
+    "signOut": "Đăng xuất"
+  },
+  "LocaleSwitcher": {
+    "label": "Ngôn ngữ",
+    "vi": "Tiếng Việt",
+    "en": "English"
+  },
+  "Footer": {
+    "tagline": "Sàn sách tập hợp những hiệu sách đã được xác minh. Một giỏ hàng, đơn riêng cho từng hiệu sách.",
+    "shop": "Mua sắm",
+    "allBooks": "Tất cả sách",
+    "stores": "Danh sách hiệu sách",
+    "trackOrder": "Theo dõi đơn hàng",
+    "sellers": "Người bán",
+    "openStore": "Mở hiệu sách trên Thoth",
+    "verification": "Quy trình xác minh",
+    "fees": "Phí và hoa hồng",
+    "support": "Hỗ trợ",
+    "helpCenter": "Trung tâm trợ giúp",
+    "returns": "Đổi trả và hoàn tiền",
+    "contact": "Liên hệ",
+    "terms": "Điều khoản sử dụng",
+    "privacy": "Chính sách bảo mật",
+    "copyright": "© {year} Thoth"
+  },
+  "Banner": {
+    "headline": "Nhiều hiệu sách. <em>Một giỏ hàng.</em>",
+    "lead": "Mỗi hiệu sách trên Thoth đều được xác minh trước khi mở bán. Đặt sách từ nhiều nơi, nhận đơn riêng theo từng hiệu sách.",
+    "caption": "Hiệu sách minh hoạ. Dấu “Đã xác minh” chỉ có sau khi Thoth duyệt hồ sơ người bán.",
+    "verifiedOn": "Đã xác minh tháng {date}",
+    "postmark": "ĐÃ XÁC MINH · THOTH ·",
+    "genre": {
+      "literature": "Văn học",
+      "secondhand": "Sách cũ",
+      "manga": "Manga"
+    }
+  },
+  "SignIn": {
+    "metaTitle": "Đăng nhập",
+    "title": "Đăng nhập",
+    "description": "Chào mừng bạn quay lại Thoth.",
+    "email": "Email",
+    "emailPlaceholder": "Ví dụ: ten@vidu.com",
+    "password": "Mật khẩu",
+    "forgotPassword": "Quên mật khẩu?",
+    "submit": "Đăng nhập",
+    "noAccount": "Chưa có tài khoản?",
+    "signUpLink": "Đăng ký",
+    "errorTitle": "Không thể đăng nhập"
+  },
+  "SignUp": {
+    "metaTitle": "Đăng ký",
+    "title": "Tạo tài khoản",
+    "description": "Một tài khoản để mua sách từ mọi hiệu sách trên Thoth.",
+    "fullName": "Họ và tên",
+    "fullNamePlaceholder": "Ví dụ: Nguyễn Văn An",
+    "email": "Email",
+    "emailPlaceholder": "Ví dụ: ten@vidu.com",
+    "password": "Mật khẩu",
+    "passwordHint": "Ít nhất 8 ký tự, gồm chữ và số.",
+    "confirmPassword": "Nhập lại mật khẩu",
+    "dateOfBirth": "Ngày sinh",
+    "dateOfBirthPlaceholder": "Chọn ngày sinh",
+    "dateOfBirthHint": "Bạn cần đủ {minAge} tuổi để tạo tài khoản.",
+    "sex": "Giới tính",
+    "sexOptions": {
+      "male": "Nam",
+      "female": "Nữ",
+      "other": "Khác"
+    },
+    "terms": "Tôi đồng ý với <terms>Điều khoản sử dụng</terms> và <privacy>Chính sách bảo mật</privacy> của Thoth.",
+    "submit": "Tạo tài khoản",
+    "haveAccount": "Đã có tài khoản?",
+    "signInLink": "Đăng nhập",
+    "errorTitle": "Không thể tạo tài khoản"
+  },
+  "PasswordInput": {
+    "show": "Hiện mật khẩu",
+    "hide": "Ẩn mật khẩu"
+  },
+  "Validation": {
+    "emailRequired": "Vui lòng nhập email.",
+    "emailInvalid": "Email không hợp lệ. Ví dụ: ten@vidu.com",
+    "passwordRequired": "Vui lòng nhập mật khẩu.",
+    "fullNameRequired": "Vui lòng nhập họ và tên.",
+    "fullNameMin": "Họ và tên cần ít nhất 2 ký tự.",
+    "fullNameMax": "Họ và tên tối đa 100 ký tự.",
+    "passwordMin": "Mật khẩu cần ít nhất 8 ký tự.",
+    "passwordMax": "Mật khẩu tối đa 128 ký tự.",
+    "passwordLetter": "Mật khẩu cần có ít nhất một chữ cái.",
+    "passwordDigit": "Mật khẩu cần có ít nhất một chữ số.",
+    "confirmPasswordRequired": "Vui lòng nhập lại mật khẩu.",
+    "passwordMismatch": "Mật khẩu nhập lại không khớp.",
+    "dateOfBirthRequired": "Vui lòng chọn ngày sinh.",
+    "dateOfBirthFuture": "Ngày sinh không thể ở tương lai.",
+    "minAge": "Bạn cần đủ {minAge} tuổi để tạo tài khoản.",
+    "sexRequired": "Vui lòng chọn giới tính.",
+    "termsRequired": "Bạn cần đồng ý với điều khoản để tiếp tục."
+  },
+  "Errors": {
+    "network": "Không kết nối được máy chủ. Kiểm tra mạng rồi thử lại.",
+    "unexpected": "Đã có lỗi xảy ra. Vui lòng thử lại."
+  },
+  "VerifyEmail": {
+    "metaTitle": "Xác thực email",
+    "verifyingTitle": "Đang xác thực email",
+    "verifyingBody": "Vui lòng đợi trong giây lát…",
+    "successTitle": "Email đã được xác thực",
+    "successBody": "Tài khoản Thoth của bạn đã sẵn sàng. Bạn có thể mua sách từ mọi hiệu sách đã xác minh.",
+    "postmark": "ĐÃ XÁC MINH · THOTH ·",
+    "goHome": "Bắt đầu khám phá",
+    "signIn": "Đăng nhập",
+    "invalidTitle": "Liên kết không dùng được",
+    "invalidHint": "Mỗi liên kết chỉ dùng được một lần và có hạn sử dụng. Nếu bạn đã nhận nhiều email, hãy mở email mới nhất từ Thoth.",
+    "missingToken": "Liên kết xác thực thiếu mã. Hãy mở lại liên kết đầy đủ trong email.",
+    "errorTitle": "Chưa xác thực được",
+    "retry": "Thử lại",
+    "backHome": "Về trang chủ",
+    "resend": "Gửi lại email xác thực",
+    "resendSent": "Đã gửi email mới. Hãy kiểm tra hộp thư, kể cả mục Thư rác.",
+    "resendCooldown": "Gửi lại sau {seconds} giây",
+    "resendEmailLabel": "Email đăng ký",
+    "resendEmailPlaceholder": "Ví dụ: ten@vidu.com",
+    "resendSentMaybe": "Nếu email này thuộc một tài khoản chưa xác thực, chúng tôi đã gửi liên kết mới. Hãy kiểm tra hộp thư, kể cả mục Thư rác."
+  },
+  "CheckEmail": {
+    "sentTo": "Gửi đến",
+    "home": "Về trang chủ",
+    "signedUpTitle": "Kiểm tra hộp thư của bạn",
+    "signedUpDescription": "Tài khoản đã được tạo. Chúng tôi vừa gửi liên kết xác thực đến:",
+    "signedUpHint": "Mở email và nhấn “Xác thực email” để kích hoạt tài khoản. Liên kết có hiệu lực trong 24 giờ. Không thấy email? Hãy xem mục Thư rác.",
+    "unverifiedTitle": "Xác thực email để đăng nhập",
+    "unverifiedDescription": "Tài khoản này chưa được xác thực. Chúng tôi vừa gửi liên kết xác thực mới đến:",
+    "unverifiedHint": "Mở email và nhấn “Xác thực email”, rồi quay lại đăng nhập. Liên kết có hiệu lực trong 24 giờ. Không thấy email? Hãy xem mục Thư rác.",
+    "backToSignIn": "Quay lại đăng nhập"
+  }
+}

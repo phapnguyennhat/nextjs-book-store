@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-14T09:04:34.657Z",
+  "title": "Design System: Thoth",
+  "extensions": {
+    "colorMeta": {
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "oklch(26.2% 0.057 265.7)",
+        "tonalRamp": [
+          "oklch(15% 0.016 265.7)",
+          "oklch(25% 0.026 265.7)",
+          "oklch(35% 0.036 265.7)",
+          "oklch(48% 0.050 265.7)",
+          "oklch(60% 0.052 265.7)",
+          "oklch(72% 0.039 265.7)",
+          "oklch(84% 0.027 265.7)",
+          "oklch(95% 0.016 265.7)"
+        ]
+      },
+      "night-deep": {
+        "role": "neutral",
+        "displayName": "Night Deep",
+        "canonical": "oklch(22.4% 0.051 267.3)",
+        "tonalRamp": [
+          "oklch(15% 0.014 267.3)",
+          "oklch(25% 0.023 267.3)",
+          "oklch(35% 0.032 267.3)",
+          "oklch(48% 0.044 267.3)",
+          "oklch(60% 0.046 267.3)",
+          "oklch(72% 0.035 267.3)",
+          "oklch(84% 0.024 267.3)",
+          "oklch(95% 0.014 267.3)"
+        ]
+      },
+      "night-raised": {
+        "role": "neutral",
+        "displayName": "Night Raised",
+        "canonical": "oklch(29.2% 0.073 267.8)",
+        "tonalRamp": [
+          "oklch(15% 0.020 267.8)",
+          "oklch(25% 0.033 267.8)",
+          "oklch(35% 0.047 267.8)",
+          "oklch(48% 0.064 267.8)",
+          "oklch(60% 0.067 267.8)",
+          "oklch(72% 0.051 267.8)",
+          "oklch(84% 0.035 267.8)",
+          "oklch(95% 0.020 267.8)"
+        ]
+      },
+      "night-line": {
+        "role": "neutral",
+        "displayName": "Night Line",
+        "canonical": "oklch(35.8% 0.079 267.3)",
+        "tonalRamp": [
+          "oklch(15% 0.022 267.3)",
+          "oklch(25% 0.036 267.3)",
+          "oklch(35% 0.050 267.3)",
+          "oklch(48% 0.069 267.3)",
+          "oklch(60% 0.072 267.3)",
+          "oklch(72% 0.055 267.3)",
+          "oklch(84% 0.037 267.3)",
+          "oklch(95% 0.022 267.3)"
+        ]
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "oklch(81.4% 0.040 272.9)",
+        "tonalRamp": [
+          "oklch(15% 0.011 272.9)",
+          "oklch(25% 0.018 272.9)",
+          "oklch(35% 0.026 272.9)",
+          "oklch(48% 0.035 272.9)",
+          "oklch(60% 0.037 272.9)",
+          "oklch(72% 0.028 272.9)",
+          "oklch(84% 0.019 272.9)",
+          "oklch(95% 0.011 272.9)"
+        ]
+      },
+      "dusk": {
+        "role": "tertiary",
+        "displayName": "Dusk",
+        "canonical": "oklch(38.0% 0.102 267.7)",
+        "tonalRamp": [
+          "oklch(15% 0.028 267.7)",
+          "oklch(25% 0.046 267.7)",
+          "oklch(35% 0.065 267.7)",
+          "oklch(48% 0.089 267.7)",
+          "oklch(60% 0.092 267.7)",
+          "oklch(72% 0.070 267.7)",
+          "oklch(84% 0.048 267.7)",
+          "oklch(95% 0.028 267.7)"
+        ]
+      },
+      "moon": {
+        "role": "neutral",
+        "displayName": "Moon",
+        "canonical": "oklch(94.9% 0.008 301.4)",
+        "tonalRamp": [
+          "oklch(15% 0.002 301.4)",
+          "oklch(25% 0.004 301.4)",
+          "oklch(35% 0.005 301.4)",
+          "oklch(48% 0.007 301.4)",
+          "oklch(60% 0.008 301.4)",
+          "oklch(72% 0.006 301.4)",
+          "oklch(84% 0.004 301.4)",
+          "oklch(95% 0.002 301.4)"
+        ]
+      },
+      "crescent": {
+        "role": "primary",
+        "displayName": "Pale Crescent",
+        "canonical": "oklch(90.4% 0.083 93.3)",
+        "tonalRamp": [
+          "oklch(15% 0.023 93.3)",
+          "oklch(25% 0.038 93.3)",
+          "oklch(35% 0.053 93.3)",
+          "oklch(48% 0.073 93.3)",
+          "oklch(60% 0.076 93.3)",
+          "oklch(72% 0.057 93.3)",
+          "oklch(84% 0.039 93.3)",
+          "oklch(95% 0.023 93.3)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Ibis Gold",
+        "canonical": "oklch(77.1% 0.139 79.4)",
+        "tonalRamp": [
+          "oklch(15% 0.038 79.4)",
+          "oklch(25% 0.063 79.4)",
+          "oklch(35% 0.088 79.4)",
+          "oklch(48% 0.121 79.4)",
+          "oklch(60% 0.126 79.4)",
+          "oklch(72% 0.096 79.4)",
+          "oklch(84% 0.065 79.4)",
+          "oklch(95% 0.038 79.4)"
+        ]
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "Ibis Teal",
+        "canonical": "oklch(49.1% 0.075 190.1)",
+        "tonalRamp": [
+          "oklch(15% 0.020 190.1)",
+          "oklch(25% 0.034 190.1)",
+          "oklch(35% 0.048 190.1)",
+          "oklch(48% 0.065 190.1)",
+          "oklch(60% 0.068 190.1)",
+          "oklch(72% 0.052 190.1)",
+          "oklch(84% 0.035 190.1)",
+          "oklch(95% 0.020 190.1)"
+        ]
+      },
+      "ember": {
+        "role": "tertiary",
+        "displayName": "Ember",
+        "canonical": "oklch(66.3% 0.166 42.7)",
+        "tonalRamp": [
+          "oklch(15% 0.045 42.7)",
+          "oklch(25% 0.076 42.7)",
+          "oklch(35% 0.106 42.7)",
+          "oklch(48% 0.145 42.7)",
+          "oklch(60% 0.151 42.7)",
+          "oklch(72% 0.115 42.7)",
+          "oklch(84% 0.079 42.7)",
+          "oklch(95% 0.045 42.7)"
+        ]
+      },
+      "background": {
+        "role": "neutral",
+        "displayName": "Lavender Paper",
+        "canonical": "oklch(97.2% 0.005 297.7)",
+        "tonalRamp": [
+          "oklch(15% 0.001 297.7)",
+          "oklch(25% 0.002 297.7)",
+          "oklch(35% 0.003 297.7)",
+          "oklch(48% 0.005 297.7)",
+          "oklch(60% 0.005 297.7)",
+          "oklch(72% 0.004 297.7)",
+          "oklch(84% 0.003 297.7)",
+          "oklch(95% 0.001 297.7)"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Night Text",
+        "canonical": "oklch(26.2% 0.057 265.7)",
+        "tonalRamp": [
+          "oklch(15% 0.016 265.7)",
+          "oklch(25% 0.026 265.7)",
+          "oklch(35% 0.036 265.7)",
+          "oklch(48% 0.050 265.7)",
+          "oklch(60% 0.052 265.7)",
+          "oklch(72% 0.039 265.7)",
+          "oklch(84% 0.027 265.7)",
+          "oklch(95% 0.016 265.7)"
+        ]
+      },
+      "popover": {
+        "role": "neutral",
+        "displayName": "Popover White",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(48% 0.000 89.9)",
+          "oklch(60% 0.000 89.9)",
+          "oklch(72% 0.000 89.9)",
+          "oklch(84% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Pale Slate",
+        "canonical": "oklch(92.0% 0.017 274.8)",
+        "tonalRamp": [
+          "oklch(15% 0.005 274.8)",
+          "oklch(25% 0.008 274.8)",
+          "oklch(35% 0.011 274.8)",
+          "oklch(48% 0.014 274.8)",
+          "oklch(60% 0.015 274.8)",
+          "oklch(72% 0.011 274.8)",
+          "oklch(84% 0.008 274.8)",
+          "oklch(95% 0.005 274.8)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "oklch(91.7% 0.014 295.3)",
+        "tonalRamp": [
+          "oklch(15% 0.004 295.3)",
+          "oklch(25% 0.006 295.3)",
+          "oklch(35% 0.009 295.3)",
+          "oklch(48% 0.012 295.3)",
+          "oklch(60% 0.012 295.3)",
+          "oklch(72% 0.009 295.3)",
+          "oklch(84% 0.006 295.3)",
+          "oklch(95% 0.004 295.3)"
+        ]
+      },
+      "muted-foreground": {
+        "role": "neutral",
+        "displayName": "Slate Ink",
+        "canonical": "oklch(45.4% 0.056 269.9)",
+        "tonalRamp": [
+          "oklch(15% 0.015 269.9)",
+          "oklch(25% 0.025 269.9)",
+          "oklch(35% 0.036 269.9)",
+          "oklch(48% 0.049 269.9)",
+          "oklch(60% 0.051 269.9)",
+          "oklch(72% 0.039 269.9)",
+          "oklch(84% 0.026 269.9)",
+          "oklch(95% 0.015 269.9)"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Mint Wash",
+        "canonical": "oklch(92.1% 0.022 182.5)",
+        "tonalRamp": [
+          "oklch(15% 0.006 182.5)",
+          "oklch(25% 0.010 182.5)",
+          "oklch(35% 0.014 182.5)",
+          "oklch(48% 0.019 182.5)",
+          "oklch(60% 0.020 182.5)",
+          "oklch(72% 0.015 182.5)",
+          "oklch(84% 0.010 182.5)",
+          "oklch(95% 0.006 182.5)"
+        ]
+      },
+      "accent-foreground": {
+        "role": "secondary",
+        "displayName": "Deep Mint Ink",
+        "canonical": "oklch(38.6% 0.059 190.0)",
+        "tonalRamp": [
+          "oklch(15% 0.016 190.0)",
+          "oklch(25% 0.027 190.0)",
+          "oklch(35% 0.037 190.0)",
+          "oklch(48% 0.051 190.0)",
+          "oklch(60% 0.053 190.0)",
+          "oklch(72% 0.041 190.0)",
+          "oklch(84% 0.028 190.0)",
+          "oklch(95% 0.016 190.0)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "oklch(83.2% 0.027 276.3)",
+        "tonalRamp": [
+          "oklch(15% 0.007 276.3)",
+          "oklch(25% 0.012 276.3)",
+          "oklch(35% 0.017 276.3)",
+          "oklch(48% 0.023 276.3)",
+          "oklch(60% 0.024 276.3)",
+          "oklch(72% 0.019 276.3)",
+          "oklch(84% 0.013 276.3)",
+          "oklch(95% 0.007 276.3)"
+        ]
+      },
+      "input": {
+        "role": "neutral",
+        "displayName": "Field Stroke",
+        "canonical": "oklch(75.7% 0.034 274.0)",
+        "tonalRamp": [
+          "oklch(15% 0.009 274.0)",
+          "oklch(25% 0.015 274.0)",
+          "oklch(35% 0.021 274.0)",
+          "oklch(48% 0.029 274.0)",
+          "oklch(60% 0.031 274.0)",
+          "oklch(72% 0.023 274.0)",
+          "oklch(84% 0.016 274.0)",
+          "oklch(95% 0.009 274.0)"
+        ]
+      },
+      "destructive": {
+        "role": "error",
+        "displayName": "Brick",
+        "canonical": "oklch(50.0% 0.182 29.5)",
+        "tonalRamp": [
+          "oklch(15% 0.050 29.5)",
+          "oklch(25% 0.083 29.5)",
+          "oklch(35% 0.116 29.5)",
+          "oklch(48% 0.159 29.5)",
+          "oklch(60% 0.166 29.5)",
+          "oklch(72% 0.126 29.5)",
+          "oklch(84% 0.086 29.5)",
+          "oklch(95% 0.050 29.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; clamps 2.25rem / 3rem / 3.5rem; second sentence in gold."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Card title (h1) of a working surface."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "One line under the display, night-ink on night."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Descriptions, hints, footer copy; inputs use 1rem below md."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels; links inside are 600 teal."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Stamp codes, captions, legal row; tabular figures for numbers."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-float",
+        "value": "0 24px 48px -24px rgb(0 0 0 / 0.55)",
+        "purpose": "The single moon-white working card over the night ground."
+      },
+      {
+        "name": "ring-focus-light",
+        "value": "0 0 0 3px color-mix(in oklch, var(--teal) 50%, transparent)",
+        "purpose": "Focus ring on controls over light surfaces."
+      },
+      {
+        "name": "ring-focus-night",
+        "value": "0 0 0 3px color-mix(in oklch, var(--gold) 60%, transparent)",
+        "purpose": "Focus ring on links and pills in night chrome."
+      },
+      {
+        "name": "ring-invalid",
+        "value": "0 0 0 3px color-mix(in oklch, var(--destructive) 20%, transparent)",
+        "purpose": "Invalid control."
+      },
+      {
+        "name": "hero-ground",
+        "value": "radial-gradient(circle at 18% 0%, var(--dusk) 0, var(--night) 40%, var(--night-deep) 75%)",
+        "purpose": "Background of the hero / auth ground (gradient, not a shadow)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "postmark-stamp",
+        "value": "520ms cubic-bezier(0.16, 1, 0.3, 1) both; from rotate(-32deg) scale(1.6) blur(2px) opacity 0 to rotate(-14deg) scale(1)",
+        "purpose": "The postmark lands once on load, staggered 300ms + 220ms per stamp; none under prefers-reduced-motion."
+      },
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Entrance easing for signature moments."
+      },
+      {
+        "name": "press",
+        "value": "translateY(1px)",
+        "purpose": "Button active state."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "container",
+        "value": "1280px"
+      }
+    ],
+    "browserSurfaces": {
+      "selection": "var(--gold) on var(--night)",
+      "caret": "var(--teal); var(--gold) in the night header search",
+      "accentColor": "var(--teal)",
+      "scrollbarColor": "var(--night-line) var(--night-deep)"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single gold forward action per view, 44px, full width in forms.",
+      "html": "<button class=\"ds-btn-primary\">Đăng nhập</button>",
+      "css": ".ds-btn-primary{width:100%;height:44px;padding:0 16px;background:var(--gold);color:var(--night);border:1px solid transparent;border-radius:8px;font:500 1rem/1 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif;cursor:pointer;transition:background .15s,transform .1s}.ds-btn-primary:hover{background:color-mix(in oklch,var(--gold) 80%,transparent)}.ds-btn-primary:focus-visible{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px color-mix(in oklch,var(--teal) 50%,transparent)}.ds-btn-primary:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary actions and picker triggers, 40px.",
+      "html": "<button class=\"ds-btn-outline\">Chọn ngày sinh</button>",
+      "css": ".ds-btn-outline{height:40px;padding:0 12px;background:var(--background);color:var(--foreground);border:1px solid var(--border);border-radius:8px;font:500 .875rem/1 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif;cursor:pointer;transition:background .15s}.ds-btn-outline:hover{background:var(--muted)}.ds-btn-outline:focus-visible{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px color-mix(in oklch,var(--teal) 50%,transparent)}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "40px field on the moon card; teal focus, brick error.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-label\">Email</span><input class=\"ds-input\" placeholder=\"Ví dụ: ten@vidu.com\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:8px;padding:16px;background:var(--moon);font-family:'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif}.ds-label{font-size:.875rem;font-weight:500;color:var(--foreground)}.ds-input{height:40px;padding:4px 10px;background:transparent;border:1px solid var(--input);border-radius:8px;color:var(--foreground);font:400 .875rem 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif;caret-color:var(--teal);outline:none;transition:border-color .15s}.ds-input::placeholder{color:var(--muted-foreground)}.ds-input:focus-visible{border-color:var(--teal);box-shadow:0 0 0 3px color-mix(in oklch,var(--teal) 50%,transparent)}.ds-input[aria-invalid=true]{border-color:var(--destructive);box-shadow:0 0 0 3px color-mix(in oklch,var(--destructive) 20%,transparent)}"
+    },
+    {
+      "name": "Auth Card",
+      "kind": "card",
+      "refersTo": "auth-card",
+      "description": "Moon working card with a 4px gold top rule and the single card float.",
+      "html": "<section class=\"ds-card\"><div class=\"ds-card-rule\"></div><div class=\"ds-card-body\"><h1 class=\"ds-card-title\">Đăng nhập</h1><p class=\"ds-card-desc\">Chào mừng bạn quay lại Thoth.</p><p class=\"ds-card-foot\">Chưa có tài khoản? <a href=\"#\" class=\"ds-link\">Đăng ký</a></p></div></section>",
+      "css": ".ds-card{max-width:32rem;overflow:hidden;border-radius:11.2px;background:var(--moon);color:var(--foreground);box-shadow:0 24px 48px -24px rgb(0 0 0/.55);font-family:'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif}.ds-card-rule{height:4px;background:var(--gold)}.ds-card-body{padding:40px}.ds-card-title{margin:0;font-size:1.875rem;font-weight:800;letter-spacing:-.025em}.ds-card-desc{margin:6px 0 32px;font-size:.875rem;color:var(--muted-foreground)}.ds-card-foot{margin:0;text-align:center;font-size:.875rem;color:var(--muted-foreground)}.ds-link{color:var(--teal);font-weight:600;text-decoration:none;text-underline-offset:4px}.ds-link:hover,.ds-link:focus-visible{text-decoration:underline;outline:none}"
+    },
+    {
+      "name": "Site Header",
+      "kind": "nav",
+      "refersTo": "site-header",
+      "description": "Sticky night-deep bar: logo, search, sell and cart links, locale switcher.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-logo\" href=\"#\"><svg viewBox=\"0 0 32 32\" width=\"32\" height=\"32\" aria-hidden=\"true\"><path d=\"M6.6 4A13 13 0 1 0 25.4 4A11 11 0 1 1 6.6 4Z\" fill=\"var(--gold)\"/><circle cx=\"16\" cy=\"13\" r=\"5.5\" fill=\"var(--moon)\"/></svg>Thoth</a><div class=\"ds-search\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input placeholder=\"Tìm sách, tác giả, hiệu sách...\" aria-label=\"Tìm kiếm\"></div><nav class=\"ds-nav\"><a href=\"#\" class=\"ds-navlink\">Giỏ hàng (0)</a><span class=\"ds-locale\"><a href=\"#\" class=\"ds-loc ds-loc-on\" aria-current=\"true\">vi</a><a href=\"#\" class=\"ds-loc\">en</a></span></nav></header>",
+      "css": ".ds-header{display:flex;align-items:center;gap:24px;height:72px;padding:0 24px;background:var(--night-deep);border-bottom:1px solid var(--night-line);color:var(--moon);font-family:'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif}.ds-logo{display:flex;align-items:center;gap:10px;font-size:1.5rem;font-weight:800;letter-spacing:-.025em;color:var(--crescent);text-decoration:none;border-radius:6px}.ds-logo:focus-visible,.ds-navlink:focus-visible,.ds-loc:focus-visible{outline:none;box-shadow:0 0 0 3px color-mix(in oklch,var(--gold) 60%,transparent)}.ds-search{flex:1;max-width:32rem;display:flex;align-items:center;gap:8px;height:40px;padding:0 12px;background:var(--night-raised);border:1px solid var(--night-line);border-radius:6px;color:var(--night-ink)}.ds-search:focus-within{border-color:var(--gold);box-shadow:0 0 0 3px color-mix(in oklch,var(--gold) 30%,transparent)}.ds-search input{flex:1;height:100%;background:transparent;border:0;outline:none;color:var(--moon);caret-color:var(--gold);font:400 .875rem 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif}.ds-search input::placeholder{color:var(--night-ink)}.ds-nav{margin-left:auto;display:flex;align-items:center;gap:8px}.ds-navlink{padding:8px 12px;border-radius:6px;color:var(--night-ink);font-size:.875rem;text-decoration:none;font-variant-numeric:tabular-nums;transition:color .15s}.ds-navlink:hover{color:var(--moon)}.ds-locale{display:flex;padding:2px;border:1px solid var(--night-line);border-radius:6px}.ds-loc{padding:4px 8px;border-radius:4px;font-size:.75rem;font-weight:600;text-transform:uppercase;color:var(--night-ink);text-decoration:none}.ds-loc:hover{color:var(--moon)}.ds-loc-on{background:var(--night-raised);color:var(--crescent)}"
+    },
+    {
+      "name": "Store Stamp with Postmark",
+      "kind": "custom",
+      "refersTo": "store-stamp",
+      "description": "Perforated moon-paper stamp around a coloured face; a verified store carries the crescent postmark, which lands once on load.",
+      "html": "<div class=\"ds-stamp-wrap\"><div class=\"ds-stamp\"><div class=\"ds-stamp-face\"><span class=\"ds-stamp-code\">TH-0142</span><span class=\"ds-stamp-name\">Hiệu sách Gác Xép</span><span class=\"ds-stamp-meta\">Văn học · Hà Nội</span></div></div><svg class=\"ds-postmark\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"none\" stroke=\"var(--crescent)\" stroke-width=\"3\"/><circle cx=\"50\" cy=\"50\" r=\"27\" fill=\"none\" stroke=\"var(--crescent)\" stroke-width=\"1.6\"/><text x=\"50\" y=\"54\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"800\" fill=\"var(--crescent)\" stroke=\"var(--night-deep)\" stroke-width=\"2.4\" paint-order=\"stroke\">03.2026</text></svg></div>",
+      "css": ".ds-stamp-wrap{position:relative;width:180px;padding:24px;background:var(--night);font-family:'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif}.ds-stamp{padding:8px;background:var(--moon);-webkit-mask:radial-gradient(circle 5px,#0000 98%,#000) -7px -7px/14px 14px round,linear-gradient(#000 0 0) 7px 7px/calc(100% - 14px) calc(100% - 14px) no-repeat;mask:radial-gradient(circle 5px,#0000 98%,#000) -7px -7px/14px 14px round,linear-gradient(#000 0 0) 7px 7px/calc(100% - 14px) calc(100% - 14px) no-repeat}.ds-stamp-face{display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:9/10;padding:16px;background:var(--teal);color:#fff}.ds-stamp-code{font-size:.75rem;font-weight:500;font-variant-numeric:tabular-nums;opacity:.9}.ds-stamp-name{font-size:1rem;font-weight:700;line-height:1.25}.ds-stamp-meta{font-size:.75rem;opacity:.9}.ds-postmark{position:absolute;top:4px;right:-4px;width:88px;transform:rotate(-14deg);animation:ds-postmark 520ms cubic-bezier(.16,1,.3,1) 300ms both}@keyframes ds-postmark{from{opacity:0;transform:rotate(-32deg) scale(1.6);filter:blur(2px)}to{opacity:1;transform:rotate(-14deg) scale(1);filter:blur(0)}}@media (prefers-reduced-motion:reduce){.ds-postmark{animation:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Postmark & Parcel",
+    "overview": "Thoth is a marketplace of many bookstores, so the system is a post office at night. The ground is night indigo lit by a pale gold crescent; content sits on moon-white paper laid over it. Every store is a perforated stamp on one sheet, and the platform's verification is the circular postmark that cancels it. The metaphor is the brand's trust promise made visible: a store wears the postmark only once it has actually been approved.\n\nThe palette is fixed by the owner's Thoth illustration (night indigo, ibis teal, gold, ember, moon white) and every role is drawn from it. Density is calm: one dominant headline, one working card, generous gutters. Hierarchy comes from scale and weight within a single family, Be Vietnam Pro, chosen for full Vietnamese diacritic coverage. The world refuses the category default of a white centred login card beside a stock illustration.\n\nVietnamese is the default locale and English is first class; every string comes from `messages/{vi,en}.json` and every layout must hold both, including longer English labels and stacked Vietnamese diacritics.",
+    "keyCharacteristics": [
+      "Night-indigo chrome (header, hero ground, footer) with moon-white working surfaces.",
+      "Gold marks the one forward action per view; teal carries links, focus and verification.",
+      "Perforated stamps, circular crescent-ink postmarks, store codes `TH-0000` in tabular figures.",
+      "One family, five weights (400 to 800), hierarchy by scale.",
+      "Controls at 40px, primary actions at 44px."
+    ],
+    "rules": [
+      {
+        "name": "The Gold Is Forward Rule",
+        "body": "Gold fills exactly one control per view: the action that moves the user on (sign in, create account). Secondary actions are outline or ghost; links are teal. If two gold buttons are visible, one is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Teal Means Trust Rule",
+        "body": "Links, focus and verification speak teal. Do not use the shadcn `link` button variant on light surfaces; it inherits `--primary` and would print gold text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ember Is Ink Rule",
+        "body": "Ember appears only as stamp colour, never as warning, error or emphasis. Errors are `destructive`.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Hierarchy is built from Be Vietnam Pro's size and weight alone. No second display face, no system fallback used as a display face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Ledger Rule",
+        "body": "Store codes (`TH-0142`), verification dates (`03.2026`) and cart counts use `tabular-nums`.",
+        "section": "typography"
+      },
+      {
+        "name": "The Night Is Tonal Rule",
+        "body": "On night surfaces, step through the night ramp instead of adding shadows. The card float is the only shadow on the night ground.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do give each view exactly one gold control, the forward action, at 44px (`size=\"lg\"`) and full width in forms.",
+      "Do keep every interactive control at least 40px tall; icon-only toggles inside a 40px field may be 24px.",
+      "Do use teal for links (600 weight, underline on hover and focus) and teal focus rings on light surfaces; use 3px gold rings at 60% on night chrome.",
+      "Do show the postmark only on stores that are actually verified, with an `sr-only` text equivalent, and label placeholder stores as illustrative.",
+      "Do set store codes, dates and counts in tabular figures.",
+      "Do route every string through next-intl and check both VI and EN at mobile and desktop widths.",
+      "Do honour `prefers-reduced-motion` for every entrance animation."
+    ],
+    "donts": [
+      "Don't fill more than one control with gold, or use gold for links or secondary buttons.",
+      "Don't use ember for errors, warnings or emphasis; it is stamp colour only.",
+      "Don't add shadows on night surfaces beyond the single card float; step the night ramp instead.",
+      "Don't introduce a second typeface or set display text in a system font.",
+      "Don't place a white centred card beside a stock illustration; the story column is the stamp sheet.",
+      "Don't hard-code copy in components; Vietnamese and English must both fit."
+    ]
+  }
+}
