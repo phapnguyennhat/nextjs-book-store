@@ -38,6 +38,7 @@ Catalog variety comes from the stores themselves: what is available depends on w
 
 - Name: **Thoth**, after the Egyptian god of knowledge and writing.
 - Logo: none yet; the user asked for one to be designed as part of the visual-world work.
+- Primary colours (binding, from the user's Thoth reference illustration): night indigo/navy, ibis teal-green, gold/amber, ember orange, and pale moon white. Every visual direction must build its primary palette from these.
 
 ## Evidence on Hand
 

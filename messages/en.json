@@ -1,0 +1,141 @@
+{
+  "Metadata": {
+    "title": "Thoth — Many bookstores, one cart",
+    "description": "Thoth is a book marketplace of verified bookstores. Order from many stores in a single cart."
+  },
+  "Header": {
+    "searchLabel": "Search",
+    "searchPlaceholder": "Search books, authors, bookstores…",
+    "mainNav": "Main",
+    "sell": "Sell on Thoth",
+    "cart": "Cart ({count})",
+    "signIn": "Sign in"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "vi": "Tiếng Việt",
+    "en": "English"
+  },
+  "Footer": {
+    "tagline": "A book marketplace of verified bookstores. One cart, a separate order for each store.",
+    "shop": "Shop",
+    "allBooks": "All books",
+    "stores": "Bookstores",
+    "trackOrder": "Track an order",
+    "sellers": "Sellers",
+    "openStore": "Open a store on Thoth",
+    "verification": "Verification process",
+    "fees": "Fees and commission",
+    "support": "Support",
+    "helpCenter": "Help center",
+    "returns": "Returns and refunds",
+    "contact": "Contact",
+    "terms": "Terms of use",
+    "privacy": "Privacy policy",
+    "copyright": "© {year} Thoth"
+  },
+  "Banner": {
+    "headline": "Many bookstores. <em>One cart.</em>",
+    "lead": "Every bookstore on Thoth is verified before it can sell. Order from many stores and get a separate order from each one.",
+    "caption": "Illustrative stores. The “Verified” mark appears only after Thoth approves a seller’s application.",
+    "verifiedOn": "Verified {date}",
+    "postmark": "VERIFIED · THOTH · VERIFIED ·",
+    "genre": {
+      "literature": "Literature",
+      "secondhand": "Second-hand",
+      "manga": "Manga"
+    }
+  },
+  "SignIn": {
+    "metaTitle": "Sign in",
+    "title": "Sign in",
+    "description": "Welcome back to Thoth.",
+    "email": "Email",
+    "emailPlaceholder": "e.g. name@example.com",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "submit": "Sign in",
+    "noAccount": "No account yet?",
+    "signUpLink": "Sign up",
+    "errorTitle": "Couldn’t sign in"
+  },
+  "SignUp": {
+    "metaTitle": "Sign up",
+    "title": "Create an account",
+    "description": "One account to buy from every bookstore on Thoth.",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "e.g. Nguyen Van An",
+    "email": "Email",
+    "emailPlaceholder": "e.g. name@example.com",
+    "password": "Password",
+    "passwordHint": "At least 8 characters, with letters and numbers.",
+    "confirmPassword": "Confirm password",
+    "dateOfBirth": "Date of birth",
+    "dateOfBirthPlaceholder": "Pick your date of birth",
+    "dateOfBirthHint": "You must be at least {minAge} to create an account.",
+    "sex": "Sex",
+    "sexOptions": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other"
+    },
+    "terms": "I agree to Thoth’s <terms>Terms of use</terms> and <privacy>Privacy policy</privacy>.",
+    "submit": "Create account",
+    "haveAccount": "Already have an account?",
+    "signInLink": "Sign in",
+    "errorTitle": "Couldn’t create your account",
+    "checkEmailTitle": "Check your inbox",
+    "checkEmailDescription": "Your account is created. We just sent a verification link to:",
+    "checkEmailSentTo": "Sent to",
+    "checkEmailHint": "Open the email and press “Verify email” to activate your account. The link works for 24 hours. Can’t find it? Check your spam folder.",
+    "checkEmailHome": "Back to home"
+  },
+  "PasswordInput": {
+    "show": "Show password",
+    "hide": "Hide password"
+  },
+  "Validation": {
+    "emailRequired": "Please enter your email.",
+    "emailInvalid": "That email isn’t valid. Example: name@example.com",
+    "passwordRequired": "Please enter your password.",
+    "fullNameRequired": "Please enter your full name.",
+    "fullNameMin": "Full name needs at least 2 characters.",
+    "fullNameMax": "Full name can be at most 100 characters.",
+    "passwordMin": "Password needs at least 8 characters.",
+    "passwordMax": "Password can be at most 128 characters.",
+    "passwordLetter": "Password needs at least one letter.",
+    "passwordDigit": "Password needs at least one number.",
+    "confirmPasswordRequired": "Please confirm your password.",
+    "passwordMismatch": "Passwords don’t match.",
+    "dateOfBirthRequired": "Please pick your date of birth.",
+    "dateOfBirthFuture": "Date of birth can’t be in the future.",
+    "minAge": "You must be at least {minAge} to create an account.",
+    "sexRequired": "Please choose your sex.",
+    "termsRequired": "You need to accept the terms to continue."
+  },
+  "Errors": {
+    "network": "Can’t reach the server. Check your connection and try again.",
+    "unexpected": "Something went wrong. Please try again."
+  },
+  "VerifyEmail": {
+    "metaTitle": "Verify email",
+    "verifyingTitle": "Verifying your email",
+    "verifyingBody": "Just a moment…",
+    "successTitle": "Your email is verified",
+    "successBody": "Your Thoth account is ready. You can now buy from every verified bookstore.",
+    "postmark": "VERIFIED · THOTH · VERIFIED ·",
+    "goHome": "Start exploring",
+    "signIn": "Sign in",
+    "invalidTitle": "This link can’t be used",
+    "invalidHint": "Each link works once and expires. If you received several emails, open the newest one from Thoth.",
+    "missingToken": "This verification link is missing its code. Open the full link from the email again.",
+    "errorTitle": "We couldn’t verify your email",
+    "retry": "Try again",
+    "backHome": "Back to home",
+    "resend": "Send a new verification email",
+    "resendSent": "A new email is on its way. Check your inbox, and your spam folder too.",
+    "resendCooldown": "Send again in {seconds}s",
+    "resendNeedsLogin": "Sign in to get a new verification email.",
+    "resendSignIn": "Sign in to resend"
+  }
+}
