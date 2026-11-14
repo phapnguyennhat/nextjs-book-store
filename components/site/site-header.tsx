@@ -3,10 +3,11 @@ import { useTranslations } from "next-intl";
 
 import { LocaleSwitcher } from "@/components/site/locale-switcher";
 import { Logo } from "@/components/site/logo";
+import { UserMenu } from "@/components/site/user-menu";
 import { Link } from "@/i18n/navigation";
 
 const navLink =
-  "flex items-center gap-2 rounded-md px-3 py-2 text-night-ink transition-colors hover:text-moon focus-visible:ring-3 focus-visible:ring-gold/60 focus-visible:outline-none";
+  "flex items-center gap-2 rounded-md px-2 py-2 text-night-ink sm:px-3 transition-colors hover:text-moon focus-visible:ring-3 focus-visible:ring-gold/60 focus-visible:outline-none";
 
 export function SiteHeader() {
   const t = useTranslations("Header");
@@ -49,10 +50,14 @@ export function SiteHeader() {
             </Link>
             <Link href="/cart" className={navLink}>
               <ShoppingBagIcon aria-hidden="true" className="size-4" />
-              <span className="tabular-nums">{t("cart", { count: 0 })}</span>
+              {/* Below 400px the header cannot fit the label next to the account avatar; keep it for screen readers. */}
+              <span className="whitespace-nowrap tabular-nums max-[399px]:sr-only">
+                {t("cart", { count: 0 })}
+              </span>
             </Link>
           </nav>
           <LocaleSwitcher />
+          <UserMenu />
         </div>
       </div>
     </header>

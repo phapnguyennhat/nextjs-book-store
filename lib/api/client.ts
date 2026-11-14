@@ -48,6 +48,7 @@ const NO_REFRESH = [
   "/api/auth/refresh",
   "/api/auth/logout",
   "/api/auth/verify-email",
+  "/api/auth/resend-verification",
 ];
 
 export async function api<T>(

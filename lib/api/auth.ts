@@ -44,9 +44,13 @@ export function verifyEmail(token: string, locale: string) {
   });
 }
 
-/** Needs a signed-in user. 204 sent; 409 auth.email-already-verified; 429 auth.verify-resend-too-soon (1/min). */
-export function resendVerification(locale: string) {
-  return api<void>("/api/auth/resend-verification", { method: "POST", locale });
+/** Public; always 204 (unknown, verified or rate-limited emails alike), so it reveals nothing. */
+export function resendVerification(email: string, locale: string) {
+  return api<void>("/api/auth/resend-verification", {
+    method: "POST",
+    body: { email },
+    locale,
+  });
 }
 
 export function logout(locale: string) {

@@ -7,6 +7,7 @@ import { CircleAlertIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
 import { PasswordInput } from "@/components/auth/password-input";
+import { useSession } from "@/components/session-provider";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import {
@@ -19,16 +20,23 @@ import { Input } from "@/components/ui/input";
 import { Spinner } from "@/components/ui/spinner";
 import { Link, useRouter } from "@/i18n/navigation";
 import { login } from "@/lib/api/auth";
+import { ApiError } from "@/lib/api/client";
 import { applyApiError } from "@/lib/api/form-errors";
 import { safeNext } from "@/lib/safe-redirect";
 import { createSignInSchema, type SignInValues } from "@/lib/validations/auth";
 
-export function SignInForm() {
+export function SignInForm({
+  onUnverified,
+}: {
+  /** Right password, unverified email: the backend refuses (403) and the card switches to "verify". */
+  onUnverified: (email: string) => void;
+}) {
   const t = useTranslations("SignIn");
   const tv = useTranslations("Validation");
   const te = useTranslations("Errors");
   const locale = useLocale();
   const router = useRouter();
+  const { setUser } = useSession();
   const [formError, setFormError] = React.useState<string | null>(null);
   const schema = React.useMemo(() => createSignInSchema(tv), [tv]);
   const form = useForm<SignInValues>({
@@ -39,12 +47,19 @@ export function SignInForm() {
   async function onSubmit(values: SignInValues) {
     setFormError(null);
     try {
-      await login(values, locale); // the backend sets httpOnly auth cookies on this origin
+      const user = await login(values, locale); // the backend sets httpOnly auth cookies on this origin
+      setUser(user); // the header shows the account right away
       // Read at submit time (not useSearchParams) so the form stays in the static prerender.
       const next = new URLSearchParams(window.location.search).get("next");
       router.replace(safeNext(next));
       router.refresh(); // re-render server components so they see the new cookies
     } catch (error) {
+      if (
+        error instanceof ApiError &&
+        error.code === "auth.email-not-verified"
+      ) {
+        return onUnverified(values.email);
+      }
       setFormError(
         applyApiError(error, form.setError, ["email", "password"], {
           network: te("network"),

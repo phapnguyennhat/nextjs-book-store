@@ -9,7 +9,9 @@
     "mainNav": "Main",
     "sell": "Sell on Thoth",
     "cart": "Cart ({count})",
-    "signIn": "Sign in"
+    "signIn": "Sign in",
+    "account": "Account",
+    "signOut": "Sign out"
   },
   "LocaleSwitcher": {
     "label": "Language",
@@ -83,12 +85,7 @@
     "submit": "Create account",
     "haveAccount": "Already have an account?",
     "signInLink": "Sign in",
-    "errorTitle": "Couldn’t create your account",
-    "checkEmailTitle": "Check your inbox",
-    "checkEmailDescription": "Your account is created. We just sent a verification link to:",
-    "checkEmailSentTo": "Sent to",
-    "checkEmailHint": "Open the email and press “Verify email” to activate your account. The link works for 24 hours. Can’t find it? Check your spam folder.",
-    "checkEmailHome": "Back to home"
+    "errorTitle": "Couldn’t create your account"
   },
   "PasswordInput": {
     "show": "Show password",
@@ -135,7 +132,19 @@
     "resend": "Send a new verification email",
     "resendSent": "A new email is on its way. Check your inbox, and your spam folder too.",
     "resendCooldown": "Send again in {seconds}s",
-    "resendNeedsLogin": "Sign in to get a new verification email.",
-    "resendSignIn": "Sign in to resend"
+    "resendEmailLabel": "Email you signed up with",
+    "resendEmailPlaceholder": "e.g. name@example.com",
+    "resendSentMaybe": "If this email belongs to an unverified account, we’ve sent a new link. Check your inbox, and your spam folder too."
+  },
+  "CheckEmail": {
+    "sentTo": "Sent to",
+    "home": "Back to home",
+    "signedUpTitle": "Check your inbox",
+    "signedUpDescription": "Your account is created. We just sent a verification link to:",
+    "signedUpHint": "Open the email and press “Verify email” to activate your account. The link works for 24 hours. Can’t find it? Check your spam folder.",
+    "unverifiedTitle": "Verify your email to sign in",
+    "unverifiedDescription": "This account isn’t verified yet. We just sent a new verification link to:",
+    "unverifiedHint": "Open the email, press “Verify email”, then come back and sign in. The link works for 24 hours. Can’t find it? Check your spam folder.",
+    "backToSignIn": "Back to sign in"
   }
 }

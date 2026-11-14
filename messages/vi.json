@@ -9,7 +9,9 @@
     "mainNav": "Chính",
     "sell": "Bán trên Thoth",
     "cart": "Giỏ hàng ({count})",
-    "signIn": "Đăng nhập"
+    "signIn": "Đăng nhập",
+    "account": "Tài khoản",
+    "signOut": "Đăng xuất"
   },
   "LocaleSwitcher": {
     "label": "Ngôn ngữ",
@@ -83,12 +85,7 @@
     "submit": "Tạo tài khoản",
     "haveAccount": "Đã có tài khoản?",
     "signInLink": "Đăng nhập",
-    "errorTitle": "Không thể tạo tài khoản",
-    "checkEmailTitle": "Kiểm tra hộp thư của bạn",
-    "checkEmailDescription": "Tài khoản đã được tạo. Chúng tôi vừa gửi liên kết xác thực đến:",
-    "checkEmailSentTo": "Gửi đến",
-    "checkEmailHint": "Mở email và nhấn “Xác thực email” để kích hoạt tài khoản. Liên kết có hiệu lực trong 24 giờ. Không thấy email? Hãy xem mục Thư rác.",
-    "checkEmailHome": "Về trang chủ"
+    "errorTitle": "Không thể tạo tài khoản"
   },
   "PasswordInput": {
     "show": "Hiện mật khẩu",
@@ -135,7 +132,19 @@
     "resend": "Gửi lại email xác thực",
     "resendSent": "Đã gửi email mới. Hãy kiểm tra hộp thư, kể cả mục Thư rác.",
     "resendCooldown": "Gửi lại sau {seconds} giây",
-    "resendNeedsLogin": "Đăng nhập để gửi lại email xác thực.",
-    "resendSignIn": "Đăng nhập để gửi lại"
+    "resendEmailLabel": "Email đăng ký",
+    "resendEmailPlaceholder": "Ví dụ: ten@vidu.com",
+    "resendSentMaybe": "Nếu email này thuộc một tài khoản chưa xác thực, chúng tôi đã gửi liên kết mới. Hãy kiểm tra hộp thư, kể cả mục Thư rác."
+  },
+  "CheckEmail": {
+    "sentTo": "Gửi đến",
+    "home": "Về trang chủ",
+    "signedUpTitle": "Kiểm tra hộp thư của bạn",
+    "signedUpDescription": "Tài khoản đã được tạo. Chúng tôi vừa gửi liên kết xác thực đến:",
+    "signedUpHint": "Mở email và nhấn “Xác thực email” để kích hoạt tài khoản. Liên kết có hiệu lực trong 24 giờ. Không thấy email? Hãy xem mục Thư rác.",
+    "unverifiedTitle": "Xác thực email để đăng nhập",
+    "unverifiedDescription": "Tài khoản này chưa được xác thực. Chúng tôi vừa gửi liên kết xác thực mới đến:",
+    "unverifiedHint": "Mở email và nhấn “Xác thực email”, rồi quay lại đăng nhập. Liên kết có hiệu lực trong 24 giờ. Không thấy email? Hãy xem mục Thư rác.",
+    "backToSignIn": "Quay lại đăng nhập"
   }
 }

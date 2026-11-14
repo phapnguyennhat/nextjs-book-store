@@ -33,7 +33,7 @@ import {
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Spinner } from "@/components/ui/spinner";
 import { Link } from "@/i18n/navigation";
-import { login, signup } from "@/lib/api/auth";
+import { signup } from "@/lib/api/auth";
 import { applyApiError } from "@/lib/api/form-errors";
 import { cn } from "@/lib/utils";
 import {
@@ -91,12 +91,7 @@ export function SignUpForm({
       );
       return;
     }
-    // The account exists now. Sign in too so "resend" works; if that fails the resend button asks to sign in,
-    // which is better than an error that tempts a second sign-up with the same email.
-    await login(
-      { email: values.email, password: values.password },
-      locale,
-    ).catch(() => {});
+    // No sign-in here: the backend refuses unverified accounts, so the next step is the email.
     onSignedUp(values.email);
   }
 
