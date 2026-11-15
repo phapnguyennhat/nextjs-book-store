@@ -53,6 +53,24 @@ export function resendVerification(email: string, locale: string) {
   });
 }
 
+/** Public; always 204 (unknown or rate-limited emails alike), so it reveals nothing. */
+export function forgotPassword(email: string, locale: string) {
+  return api<void>("/api/auth/forgot-password", {
+    method: "POST",
+    body: { email },
+    locale,
+  });
+}
+
+/** One-time token from the reset email link. 204 signs out every device; 400 auth.reset-token-invalid otherwise. */
+export function resetPassword(token: string, password: string, locale: string) {
+  return api<void>("/api/auth/reset-password", {
+    method: "POST",
+    body: { token, password },
+    locale,
+  });
+}
+
 export function logout(locale: string) {
   return api<void>("/api/auth/logout", { method: "POST", locale });
 }
