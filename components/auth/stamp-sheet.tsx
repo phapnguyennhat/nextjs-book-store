@@ -36,44 +36,79 @@ export function StampSheet() {
     <figure className="flex flex-col gap-4">
       <ul className="grid grid-cols-3 gap-3 sm:gap-5">
         {stores.map((store, i) => (
-          <li key={store.code} className="relative">
-            <div className="stamp-perforated bg-moon p-2">
-              <div
-                className={cn(
-                  "flex aspect-[9/10] flex-col justify-between p-3 sm:p-4",
-                  store.tone,
-                )}
-              >
-                <span className="text-[11px] font-medium tabular-nums opacity-90 sm:text-xs">
-                  {store.code}
-                </span>
-                <span className="text-sm leading-tight font-bold sm:text-base">
-                  {store.name}
-                </span>
-                <span className="text-[11px] opacity-90 sm:text-xs">
-                  {t(`genre.${store.genre}`)} · {store.city}
-                </span>
-              </div>
-            </div>
-            {store.verifiedOn && (
-              <>
-                <span className="sr-only">
-                  {t("verifiedOn", { date: store.verifiedOn })}
-                </span>
-                <Postmark
-                  id={store.code}
-                  label={t("postmark")}
-                  date={store.verifiedOn}
-                  className="postmark pointer-events-none absolute -top-3 -right-3 w-22 sm:-top-5 sm:-right-6 sm:w-40"
-                  style={{ animationDelay: `${300 + i * 220}ms` }}
-                />
-              </>
-            )}
+          <li key={store.code}>
+            <StoreStamp
+              {...store}
+              genre={t(`genre.${store.genre}`)}
+              postmark={t("postmark")}
+              verifiedLabel={
+                store.verifiedOn && t("verifiedOn", { date: store.verifiedOn })
+              }
+              delayMs={300 + i * 220}
+            />
           </li>
         ))}
       </ul>
       <figcaption className="text-xs text-night-ink">{t("caption")}</figcaption>
     </figure>
+  );
+}
+
+// A store as a perforated stamp; the postmark lands only when the store is verified.
+export function StoreStamp({
+  code,
+  name,
+  genre,
+  city,
+  tone,
+  verifiedOn,
+  postmark,
+  verifiedLabel,
+  delayMs,
+}: {
+  code: string;
+  name: string;
+  genre: string;
+  city: string;
+  tone: string;
+  verifiedOn: string | null;
+  postmark: string;
+  verifiedLabel?: string | null;
+  delayMs: number;
+}) {
+  return (
+    <div className="relative">
+      <div className="stamp-perforated bg-moon p-2">
+        <div
+          className={cn(
+            "flex aspect-[9/10] flex-col justify-between p-3 sm:p-4",
+            tone,
+          )}
+        >
+          <span className="text-[11px] font-medium tabular-nums opacity-90 sm:text-xs">
+            {code}
+          </span>
+          <span className="text-sm leading-tight font-bold sm:text-base">
+            {name}
+          </span>
+          <span className="text-[11px] opacity-90 sm:text-xs">
+            {genre} · {city}
+          </span>
+        </div>
+      </div>
+      {verifiedOn && (
+        <>
+          <span className="sr-only">{verifiedLabel}</span>
+          <Postmark
+            id={code}
+            label={postmark}
+            date={verifiedOn}
+            className="postmark pointer-events-none absolute -top-3 -right-3 w-22 sm:-top-5 sm:-right-6 sm:w-40"
+            style={{ animationDelay: `${delayMs}ms` }}
+          />
+        </>
+      )}
+    </div>
   );
 }
 
