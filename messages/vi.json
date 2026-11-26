@@ -108,7 +108,19 @@
     "dateOfBirthFuture": "Ngày sinh không thể ở tương lai.",
     "minAge": "Bạn cần đủ {minAge} tuổi để tạo tài khoản.",
     "sexRequired": "Vui lòng chọn giới tính.",
-    "termsRequired": "Bạn cần đồng ý với điều khoản để tiếp tục."
+    "termsRequired": "Bạn cần đồng ý với điều khoản để tiếp tục.",
+    "required": "Vui lòng điền thông tin này.",
+    "tooLong": "Tối đa {max} ký tự.",
+    "slugMin": "Cần ít nhất 3 ký tự.",
+    "slugFormat": "Chữ thường không dấu và số, các từ nối bằng một dấu gạch ngang. Ví dụ: nha-sach-an",
+    "phoneFormat": "Nhập 9–15 chữ số, có thể bắt đầu bằng +. Ví dụ: +84901234567",
+    "dateRequired": "Vui lòng chọn ngày.",
+    "dateFuture": "Ngày này không thể ở tương lai.",
+    "documentRequired": "Vui lòng tải lên giấy tờ này.",
+    "sellerTypeRequired": "Vui lòng chọn hình thức bán hàng.",
+    "idNumberFormat": "Số CCCD gồm đúng 12 chữ số.",
+    "taxCodeFormat": "10 chữ số, hoặc 10 chữ số + “-” + 3 chữ số cho chi nhánh.",
+    "accountNumberFormat": "Gồm 6–20 chữ số, không có khoảng trắng."
   },
   "Errors": {
     "network": "Không kết nối được máy chủ. Kiểm tra mạng rồi thử lại.",
@@ -220,5 +232,132 @@
     "sellStampName": "Hiệu sách của bạn",
     "sellStampGenre": "Thể loại",
     "sellStampCity": "Thành phố"
+  },
+  "Sell": {
+    "metaTitle": "Bán hàng trên Thoth",
+    "title": "Bán hàng trên Thoth",
+    "lead": "Mở cửa hàng, xác minh danh tính, và khi được Thoth duyệt, sách của bạn sẽ đến tay bạn đọc khắp cả nước.",
+    "loading": "Đang tải",
+    "loadError": "Không tải được cửa hàng của bạn.",
+    "retry": "Thử lại",
+    "shop": {
+      "title": "Đăng ký cửa hàng",
+      "lead": "Đây là thông tin người mua sẽ thấy. Bạn có thể đổi sau."
+    },
+    "kyc": {
+      "title": "Xác minh {shop}",
+      "lead": "Thoth kiểm tra mọi người bán trước khi cửa hàng được mở. Bạn có thể lưu nháp và quay lại bất cứ lúc nào. Giấy tờ được lưu riêng tư, chỉ người duyệt mới xem được.",
+      "rejected": "Hồ sơ lần trước đã bị từ chối"
+    },
+    "pending": {
+      "title": "{shop} đang chờ duyệt",
+      "lead": "Chúng tôi sẽ kiểm tra giấy tờ và báo cho bạn. Trong lúc duyệt, bạn không thể sửa hồ sơ.",
+      "on": "Đã gửi {date}"
+    },
+    "approved": {
+      "title": "{shop} đã được xác minh",
+      "lead": "Cửa hàng của bạn đã mở. Người mua giờ có thể tìm thấy bạn trên Thoth.",
+      "on": "Đã duyệt {date}"
+    },
+    "editShop": {
+      "title": "Thông tin cửa hàng",
+      "lead": "Thay đổi được lưu ngay và không ảnh hưởng đến hồ sơ xác minh."
+    }
+  },
+  "Shop": {
+    "name": {
+      "label": "Tên cửa hàng"
+    },
+    "slug": {
+      "label": "Địa chỉ cửa hàng",
+      "hint": "Đường dẫn cửa hàng: thoth.vn/shops/dia-chi-cua-ban. Chữ thường, số và dấu gạch ngang."
+    },
+    "description": {
+      "label": "Mô tả (không bắt buộc)",
+      "hint": "Bạn bán gì, trong một hai câu."
+    },
+    "phone": {
+      "label": "Số điện thoại"
+    },
+    "email": {
+      "label": "Email cửa hàng"
+    },
+    "pickupAddress": {
+      "label": "Địa chỉ lấy hàng",
+      "hint": "Nơi đơn vị vận chuyển đến lấy hàng. Không hiển thị cho người mua."
+    },
+    "submit": "Tạo cửa hàng",
+    "save": "Bước tiếp theo"
+  },
+  "Kyc": {
+    "sections": {
+      "type": "Bạn bán hàng với tư cách nào?",
+      "identity": "Thông tin cá nhân",
+      "representative": "Người đại diện theo pháp luật",
+      "business": "Thông tin kinh doanh",
+      "bank": "Tài khoản nhận tiền"
+    },
+    "identityLead": "Đúng như trên căn cước công dân (CCCD).",
+    "sellerTypes": {
+      "INDIVIDUAL": {
+        "title": "Cá nhân",
+        "body": "Bán hàng với tư cách cá nhân."
+      },
+      "HOUSEHOLD_BUSINESS": {
+        "title": "Hộ kinh doanh",
+        "body": "Hộ kinh doanh đã đăng ký."
+      },
+      "COMPANY": {
+        "title": "Công ty",
+        "body": "Công ty hoặc doanh nghiệp đã đăng ký."
+      }
+    },
+    "fields": {
+      "legalName": "Họ và tên",
+      "idNumber": "Số CCCD",
+      "idIssueDate": "Ngày cấp",
+      "idIssuePlace": "Nơi cấp",
+      "dateOfBirth": "Ngày sinh",
+      "permanentAddress": "Địa chỉ thường trú",
+      "idFrontKey": "CCCD mặt trước",
+      "idBackKey": "CCCD mặt sau",
+      "selfieKey": "Ảnh chân dung cầm CCCD",
+      "business": {
+        "businessName": "Tên đăng ký kinh doanh",
+        "registrationNumber": "Số giấy chứng nhận đăng ký",
+        "registrationDate": "Ngày đăng ký",
+        "taxCode": "Mã số thuế",
+        "registeredAddress": "Địa chỉ đăng ký",
+        "licenseKey": "Giấy phép kinh doanh"
+      },
+      "bank": {
+        "bankCode": "Ngân hàng",
+        "accountNumber": "Số tài khoản",
+        "accountHolder": "Chủ tài khoản"
+      }
+    },
+    "docHints": {
+      "ID_FRONT": "JPEG hoặc PNG, tối đa 5 MB. Thấy rõ bốn góc thẻ.",
+      "ID_BACK": "JPEG hoặc PNG, tối đa 5 MB.",
+      "SELFIE": "Cầm thẻ cạnh khuôn mặt. JPEG hoặc PNG.",
+      "BUSINESS_LICENSE": "JPEG, PNG hoặc PDF, tối đa 5 MB."
+    },
+    "taxCodeHint": "10 chữ số, hoặc 13 cho chi nhánh (0101234567-001).",
+    "bankCodeHint": "Tên viết tắt, ví dụ VCB, TCB, BIDV.",
+    "accountHolderHint": "Phải trùng với họ tên hoặc tên doanh nghiệp, như ngân hàng in.",
+    "pickDate": "Chọn ngày",
+    "saveDraft": "Lưu nháp",
+    "submit": "Bước tiếp theo",
+    "back": "Quay lại",
+    "savedAt": "Đã lưu nháp lúc {time}",
+    "upload": {
+      "choose": "Chọn tệp",
+      "replace": "Thay ảnh",
+      "uploading": "Đang tải lên…",
+      "previewAlt": "Giấy tờ đã tải lên",
+      "wrongType": "Loại tệp này không được chấp nhận.",
+      "tooBig": "Tệp lớn hơn 5 MB.",
+      "failed": "Tải lên thất bại. Vui lòng thử lại."
+    }
   }
 }

@@ -21,7 +21,7 @@ export function isAtLeastAge(dob: Date, years: number, today = new Date()) {
   return threshold <= today;
 }
 
-const emailSchema = (t: ValidationT) =>
+export const emailSchema = (t: ValidationT) =>
   z
     .string()
     .trim()

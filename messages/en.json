@@ -108,7 +108,19 @@
     "dateOfBirthFuture": "Date of birth can’t be in the future.",
     "minAge": "You must be at least {minAge} to create an account.",
     "sexRequired": "Please choose your sex.",
-    "termsRequired": "You need to accept the terms to continue."
+    "termsRequired": "You need to accept the terms to continue.",
+    "required": "This field is required.",
+    "tooLong": "Can be at most {max} characters.",
+    "slugMin": "Use at least 3 characters.",
+    "slugFormat": "Lowercase letters and numbers, words joined by single hyphens. Example: nha-sach-an",
+    "phoneFormat": "Enter 9–15 digits, optionally starting with +. Example: +84901234567",
+    "dateRequired": "Please pick a date.",
+    "dateFuture": "This date can’t be in the future.",
+    "documentRequired": "Please upload this document.",
+    "sellerTypeRequired": "Please choose how you sell.",
+    "idNumberFormat": "The citizen ID number has exactly 12 digits.",
+    "taxCodeFormat": "10 digits, or 10 digits + “-” + 3 digits for a branch.",
+    "accountNumberFormat": "Use 6–20 digits, no spaces."
   },
   "Errors": {
     "network": "Can’t reach the server. Check your connection and try again.",
@@ -220,5 +232,132 @@
     "sellStampName": "Your bookstore",
     "sellStampGenre": "Genre",
     "sellStampCity": "City"
+  },
+  "Sell": {
+    "metaTitle": "Sell on Thoth",
+    "title": "Sell on Thoth",
+    "lead": "Open your store, verify who you are, and once Thoth approves you, your books reach readers across the country.",
+    "loading": "Loading",
+    "loadError": "We couldn’t load your store.",
+    "retry": "Try again",
+    "shop": {
+      "title": "Register your store",
+      "lead": "This is what buyers see. You can change it later."
+    },
+    "kyc": {
+      "title": "Verify {shop}",
+      "lead": "Thoth checks every seller before their store goes live. Save a draft any time and come back later. Documents are stored privately and only reviewers can see them.",
+      "rejected": "Your last submission was rejected"
+    },
+    "pending": {
+      "title": "{shop} is under review",
+      "lead": "We’ll check your documents and let you know. You can’t edit them while the review is open.",
+      "on": "Submitted {date}"
+    },
+    "approved": {
+      "title": "{shop} is verified",
+      "lead": "Your store is live. Buyers can now find it on Thoth.",
+      "on": "Approved {date}"
+    },
+    "editShop": {
+      "title": "Store details",
+      "lead": "Changes are saved right away and don’t affect your verification."
+    }
+  },
+  "Shop": {
+    "name": {
+      "label": "Store name"
+    },
+    "slug": {
+      "label": "Store address",
+      "hint": "Your store’s link: thoth.vn/shops/your-address. Lowercase, numbers and hyphens."
+    },
+    "description": {
+      "label": "Description (optional)",
+      "hint": "What you sell, in a sentence or two."
+    },
+    "phone": {
+      "label": "Phone"
+    },
+    "email": {
+      "label": "Store email"
+    },
+    "pickupAddress": {
+      "label": "Pickup address",
+      "hint": "Where couriers collect orders. Not shown to buyers."
+    },
+    "submit": "Create store",
+    "save": "Next step"
+  },
+  "Kyc": {
+    "sections": {
+      "type": "How do you sell?",
+      "identity": "Your identity",
+      "representative": "Legal representative",
+      "business": "Business details",
+      "bank": "Payout account"
+    },
+    "identityLead": "As printed on your citizen ID card (CCCD).",
+    "sellerTypes": {
+      "INDIVIDUAL": {
+        "title": "Individual",
+        "body": "Selling as yourself."
+      },
+      "HOUSEHOLD_BUSINESS": {
+        "title": "Household business",
+        "body": "Registered hộ kinh doanh."
+      },
+      "COMPANY": {
+        "title": "Company",
+        "body": "Registered company or enterprise."
+      }
+    },
+    "fields": {
+      "legalName": "Full legal name",
+      "idNumber": "Citizen ID number",
+      "idIssueDate": "Date of issue",
+      "idIssuePlace": "Place of issue",
+      "dateOfBirth": "Date of birth",
+      "permanentAddress": "Permanent address",
+      "idFrontKey": "ID card, front",
+      "idBackKey": "ID card, back",
+      "selfieKey": "Selfie with ID card",
+      "business": {
+        "businessName": "Registered business name",
+        "registrationNumber": "Business registration number",
+        "registrationDate": "Registration date",
+        "taxCode": "Tax code",
+        "registeredAddress": "Registered address",
+        "licenseKey": "Business license"
+      },
+      "bank": {
+        "bankCode": "Bank",
+        "accountNumber": "Account number",
+        "accountHolder": "Account holder"
+      }
+    },
+    "docHints": {
+      "ID_FRONT": "JPEG or PNG, up to 5 MB. All four corners visible.",
+      "ID_BACK": "JPEG or PNG, up to 5 MB.",
+      "SELFIE": "Hold the card next to your face. JPEG or PNG.",
+      "BUSINESS_LICENSE": "JPEG, PNG or PDF, up to 5 MB."
+    },
+    "taxCodeHint": "10 digits, or 13 for a branch (0101234567-001).",
+    "bankCodeHint": "Short name, e.g. VCB, TCB, BIDV.",
+    "accountHolderHint": "Must match your legal name or business name, as the bank prints it.",
+    "pickDate": "Pick a date",
+    "saveDraft": "Save draft",
+    "submit": "Next step",
+    "back": "Back",
+    "savedAt": "Draft saved at {time}",
+    "upload": {
+      "choose": "Choose file",
+      "replace": "Replace",
+      "uploading": "Uploading…",
+      "previewAlt": "Uploaded document",
+      "wrongType": "This file type isn’t accepted here.",
+      "tooBig": "The file is larger than 5 MB.",
+      "failed": "Upload failed. Please try again."
+    }
   }
 }
