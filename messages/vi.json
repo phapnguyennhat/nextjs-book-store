@@ -146,5 +146,52 @@
     "unverifiedDescription": "Tài khoản này chưa được xác thực. Chúng tôi vừa gửi liên kết xác thực mới đến:",
     "unverifiedHint": "Mở email và nhấn “Xác thực email”, rồi quay lại đăng nhập. Liên kết có hiệu lực trong 24 giờ. Không thấy email? Hãy xem mục Thư rác.",
     "backToSignIn": "Quay lại đăng nhập"
+  },
+  "Home": {
+    "lead": "Tìm sách từ nhiều hiệu sách đã được xác minh, đặt chung một giỏ hàng.",
+    "searchLabel": "Tìm sách",
+    "searchPlaceholder": "Tên sách, tác giả, hiệu sách…",
+    "search": "Tìm",
+    "browseGenres": "Duyệt theo thể loại",
+    "category": {
+      "literature": "Văn học",
+      "manga": "Manga & truyện tranh",
+      "children": "Thiếu nhi",
+      "history": "Lịch sử",
+      "science": "Khoa học",
+      "business": "Kinh doanh",
+      "selfhelp": "Phát triển bản thân",
+      "secondhand": "Sách cũ"
+    },
+    "sampleNote": "Sách và hiệu sách bên dưới là dữ liệu minh hoạ, chưa phải hàng thật.",
+    "suggested": "Gợi ý cho bạn",
+    "newArrivals": "Sách mới lên kệ",
+    "deals": "Đang giảm giá",
+    "seeAll": "Xem tất cả",
+    "listPrice": "Giá gốc",
+    "off": "−{percent}%",
+    "storesTitle": "Hiệu sách đã xác minh",
+    "storesLead": "Mỗi hiệu sách mang dấu bưu điện của Thoth chỉ sau khi hồ sơ người bán được duyệt.",
+    "allStores": "Xem mọi hiệu sách",
+    "sellTitle": "Mở hiệu sách của bạn trên Thoth",
+    "sellLead": "Đưa cả kệ sách lên một sàn chung. Người mua đặt từ nhiều nơi, bạn nhận đơn riêng của hiệu mình.",
+    "sellSteps": {
+      "register": {
+        "title": "Đăng ký hiệu sách",
+        "body": "Tên hiệu, địa chỉ và thông tin liên hệ."
+      },
+      "kyc": {
+        "title": "Gửi hồ sơ xác minh",
+        "body": "Giấy tờ để Thoth xác minh người bán."
+      },
+      "review": {
+        "title": "Chờ duyệt và mở bán",
+        "body": "Được duyệt là hiệu sách lên sàn."
+      }
+    },
+    "sellCta": "Bắt đầu bán sách",
+    "sellStampName": "Hiệu sách của bạn",
+    "sellStampGenre": "Thể loại",
+    "sellStampCity": "Thành phố"
   }
 }
