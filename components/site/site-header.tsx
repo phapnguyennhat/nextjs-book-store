@@ -9,7 +9,8 @@ import { Link } from "@/i18n/navigation";
 const navLink =
   "flex items-center gap-2 rounded-md px-2 py-2 text-night-ink sm:px-3 transition-colors hover:text-moon focus-visible:ring-3 focus-visible:ring-gold/60 focus-visible:outline-none";
 
-export function SiteHeader() {
+// search=false on pages that carry their own search (the home hero), so a view has one search.
+export function SiteHeader({ search = true }: { search?: boolean }) {
   const t = useTranslations("Header");
 
   return (
@@ -19,25 +20,30 @@ export function SiteHeader() {
         <Logo />
 
         {/* shortcut: plain GET to /search, wire to the catalog service when it exists */}
-        <form
-          action="/search"
-          role="search"
-          className="hidden flex-1 md:block md:max-w-lg"
-        >
-          <label htmlFor="site-search" className="sr-only">
-            {t("searchLabel")}
-          </label>
-          <div className="flex h-10 items-center gap-2 rounded-md border border-night-line bg-night-raised px-3 focus-within:border-gold focus-within:ring-3 focus-within:ring-gold/30">
-            <SearchIcon aria-hidden="true" className="size-4 text-night-ink" />
-            <input
-              id="site-search"
-              name="q"
-              type="search"
-              placeholder={t("searchPlaceholder")}
-              className="h-full flex-1 bg-transparent text-sm text-moon caret-gold outline-none placeholder:text-night-ink"
-            />
-          </div>
-        </form>
+        {search && (
+          <form
+            action="/search"
+            role="search"
+            className="hidden flex-1 md:block md:max-w-lg"
+          >
+            <label htmlFor="site-search" className="sr-only">
+              {t("searchLabel")}
+            </label>
+            <div className="flex h-10 items-center gap-2 rounded-md border border-night-line bg-night-raised px-3 focus-within:border-gold focus-within:ring-3 focus-within:ring-gold/30">
+              <SearchIcon
+                aria-hidden="true"
+                className="size-4 text-night-ink"
+              />
+              <input
+                id="site-search"
+                name="q"
+                type="search"
+                placeholder={t("searchPlaceholder")}
+                className="h-full flex-1 bg-transparent text-sm text-moon caret-gold outline-none placeholder:text-night-ink"
+              />
+            </div>
+          </form>
+        )}
 
         <div className="ml-auto flex items-center gap-1 sm:gap-2">
           <nav

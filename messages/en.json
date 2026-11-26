@@ -146,8 +146,7 @@
     "unverifiedDescription": "This account isn’t verified yet. We just sent a new verification link to:",
     "unverifiedHint": "Open the email, press “Verify email”, then come back and sign in. The link works for 24 hours. Can’t find it? Check your spam folder.",
     "backToSignIn": "Back to sign in"
-  },
-  "ForgotPassword": {
+  },  "ForgotPassword": {
     "metaTitle": "Forgot password",
     "title": "Forgot your password?",
     "description": "Enter your account’s email and we’ll send you a link to set a new password.",
@@ -174,5 +173,52 @@
     "invalidHint": "Each link works once and expires after 30 minutes. Ask for a new one.",
     "missingToken": "This reset link is missing its code. Open the full link from the email again, or ask for a new one.",
     "requestNew": "Send a new reset link"
+  },
+  "Home": {
+    "lead": "Find books from many verified bookstores and check out in one cart.",
+    "searchLabel": "Search books",
+    "searchPlaceholder": "Title, author, bookstore…",
+    "search": "Search",
+    "browseGenres": "Browse by genre",
+    "category": {
+      "literature": "Literature",
+      "manga": "Manga & comics",
+      "children": "Children’s",
+      "history": "History",
+      "science": "Science",
+      "business": "Business",
+      "selfhelp": "Self-help",
+      "secondhand": "Second-hand"
+    },
+    "sampleNote": "The books and bookstores below are sample data, not real listings.",
+    "suggested": "Suggested for you",
+    "newArrivals": "New on the shelves",
+    "deals": "On sale",
+    "seeAll": "See all",
+    "listPrice": "List price",
+    "off": "−{percent}%",
+    "storesTitle": "Verified bookstores",
+    "storesLead": "A bookstore wears Thoth’s postmark only after its seller application is approved.",
+    "allStores": "Browse all bookstores",
+    "sellTitle": "Open your bookstore on Thoth",
+    "sellLead": "Put your whole shelf on one shared marketplace. Buyers order from many stores; you get your own orders.",
+    "sellSteps": {
+      "register": {
+        "title": "Register your store",
+        "body": "Store name, address and contact details."
+      },
+      "kyc": {
+        "title": "Submit verification",
+        "body": "Documents Thoth uses to verify the seller."
+      },
+      "review": {
+        "title": "Get approved, start selling",
+        "body": "Once approved, your store goes live."
+      }
+    },
+    "sellCta": "Start selling",
+    "sellStampName": "Your bookstore",
+    "sellStampGenre": "Genre",
+    "sellStampCity": "City"
   }
 }
