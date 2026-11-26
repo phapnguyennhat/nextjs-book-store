@@ -146,6 +146,33 @@
     "unverifiedDescription": "This account isn’t verified yet. We just sent a new verification link to:",
     "unverifiedHint": "Open the email, press “Verify email”, then come back and sign in. The link works for 24 hours. Can’t find it? Check your spam folder.",
     "backToSignIn": "Back to sign in"
+  },  "ForgotPassword": {
+    "metaTitle": "Forgot password",
+    "title": "Forgot your password?",
+    "description": "Enter your account’s email and we’ll send you a link to set a new password.",
+    "email": "Email",
+    "emailPlaceholder": "e.g. name@example.com",
+    "submit": "Send reset link",
+    "sent": "If this email belongs to a Thoth account, we’ve sent a reset link. It works for 30 minutes. Check your inbox, and your spam folder too.",
+    "resendCooldown": "Send again in {seconds}s",
+    "backToSignIn": "Back to sign in"
+  },
+  "ResetPassword": {
+    "metaTitle": "Reset password",
+    "title": "Set a new password",
+    "description": "Choose a new password for your Thoth account. You’ll be signed out on every device.",
+    "password": "New password",
+    "passwordHint": "At least 8 characters, with letters and numbers.",
+    "confirmPassword": "Confirm new password",
+    "submit": "Save new password",
+    "errorTitle": "Couldn’t reset your password",
+    "successTitle": "Your password is changed",
+    "successBody": "You’ve been signed out on every device. Sign in with your new password.",
+    "signIn": "Sign in",
+    "invalidTitle": "This link can’t be used",
+    "invalidHint": "Each link works once and expires after 30 minutes. Ask for a new one.",
+    "missingToken": "This reset link is missing its code. Open the full link from the email again, or ask for a new one.",
+    "requestNew": "Send a new reset link"
   },
   "Home": {
     "lead": "Find books from many verified bookstores and check out in one cart.",

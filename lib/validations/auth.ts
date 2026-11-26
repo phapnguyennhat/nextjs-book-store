@@ -28,6 +28,14 @@ const emailSchema = (t: ValidationT) =>
     .min(1, { error: t("emailRequired"), abort: true })
     .pipe(z.email(t("emailInvalid")));
 
+const newPasswordSchema = (t: ValidationT) =>
+  z
+    .string()
+    .min(8, t("passwordMin"))
+    .max(128, t("passwordMax")) // matches the backend SignupRequest/ResetPasswordRequest limit
+    .regex(/[A-Za-z]/, t("passwordLetter"))
+    .regex(/\d/, t("passwordDigit"));
+
 export const createSignInSchema = (t: ValidationT) =>
   z.object({
     email: emailSchema(t),
@@ -46,12 +54,7 @@ export const createSignUpSchema = (t: ValidationT) =>
         .min(2, t("fullNameMin"))
         .max(100, t("fullNameMax")),
       email: emailSchema(t),
-      password: z
-        .string()
-        .min(8, t("passwordMin"))
-        .max(128, t("passwordMax")) // matches the backend SignupRequest limit
-        .regex(/[A-Za-z]/, t("passwordLetter"))
-        .regex(/\d/, t("passwordDigit")),
+      password: newPasswordSchema(t),
       confirmPassword: z.string().min(1, t("confirmPasswordRequired")),
       dateOfBirth: z
         .date({ error: t("dateOfBirthRequired") })
@@ -68,6 +71,18 @@ export const createSignUpSchema = (t: ValidationT) =>
       path: ["confirmPassword"],
     });
 
+export const createResetPasswordSchema = (t: ValidationT) =>
+  z
+    .object({
+      password: newPasswordSchema(t),
+      confirmPassword: z.string().min(1, t("confirmPasswordRequired")),
+    })
+    .refine((v) => v.password === v.confirmPassword, {
+      message: t("passwordMismatch"),
+      path: ["confirmPassword"],
+    });
+
 export type SignInValues = z.infer<ReturnType<typeof createSignInSchema>>;
 export type SignUpInput = z.input<ReturnType<typeof createSignUpSchema>>;
 export type SignUpValues = z.output<ReturnType<typeof createSignUpSchema>>;
+export type ResetPasswordValues = z.infer<ReturnType<typeof createResetPasswordSchema>>;
